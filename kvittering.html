@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kvittering</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body>
+    
+    <div class="kvittering">
+        <h1 data-aos="fade-in" data-aos-delay="500">Din bestilling er modtaget</h1>
+        <h3>Bliv siddende og nyd atmosfæren, så kommer vi ned til dig med din ordre</h3>
+        <div id="visListe"></div>
+    </div>
+        
+    <script>
+        visListe.innerHTML = localStorage.getItem("liste")
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+
+    <script src="js/js.js"></script>
+
+    
+</body>
+</html>
